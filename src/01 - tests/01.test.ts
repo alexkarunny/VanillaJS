@@ -1,6 +1,18 @@
 import {sum} from './01';
 import {SplitWords} from './01';
 
+
+let a: number;
+let b: number;
+let c: number;
+
+beforeEach( () => {
+    a = 1;
+    b = 2;
+    c = 3;
+
+})
+
 test('Sum should be corrected', () => {
     //data
     const a = 1;
@@ -31,6 +43,4 @@ test('words should be splitted', () => {
     expect(result2[1]).toBe('go');
     expect(result2[2]).toBe('we');
     expect(result2[3]).toBe('go');
-
-
 })
