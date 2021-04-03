@@ -1,4 +1,3 @@
-
 export function sum(a: number, b: number) {
     return a + b;
 }
@@ -11,11 +10,11 @@ export function SplitWords(x: string) {
         arr = [];
 
     for (let i = 0; i < str.length; i++) {
-        if ( str.codePointAt(i) <= 122 && str.codePointAt(i) >= 96 ) {
+        if (str.codePointAt(i) <= 122 && str.codePointAt(i) >= 96) {
             num1 = i;
             do {
                 i++;
-            } while ( str.codePointAt(i) <= 122 && str.codePointAt(i) >= 96 )
+            } while (str.codePointAt(i) <= 122 && str.codePointAt(i) >= 96)
             num2 = i;
             arr.push(str.slice(num1, num2))
         }
